@@ -115,7 +115,7 @@ class Serpscrap{
 		//Initialise une session CURL
 		$ch = curl_init($url);
 		//cookies
-		$cookies_file = WWW_ROOT.'cookies'.DS.$cookiename.'.txt';
+		$cookies_file = 'cookies'.$cookiename.'.txt';
 		curl_setopt($ch, CURLOPT_COOKIEJAR, $cookies_file);
 		curl_setopt($ch, CURLOPT_COOKIEFILE, $cookies_file);
 		//fin cookies
